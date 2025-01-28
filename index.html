@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>MiriMaze</title>
+  </head>
+  <body>
+    <h1>MiriMaze</h1>
+    <div class="controls">
+        <label for="difficulty">Seleciona la dificultad:</label>
+        <select id="difficulty">
+            <option value="easy">Fácil</option>
+            <option value="normal">Normal</option>
+            <option value="hard">Difícil</option>
+        </select>
+        <button id="generate">Generar Nuevo Laberinto</button>
+    </div>
+    <div class="maze">
+      <canvas id="maze" width="400" height="400"></canvas>
+    </div>
+    <div class="info">
+        <p>Tiempo: <span id="time">0</span> segundos</p>
+        <p>Movimientos: <span id="moves">0</span></p>
+    </div>
+  </body>
+</html>

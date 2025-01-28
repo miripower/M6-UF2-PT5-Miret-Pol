@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --bg: #142C3D;
+  --bg2: #1E435C;
+  --bg3: #2775a2;
+  --border: #4ca4d0;
+  --text: #F3F8FC;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+canvas {
+  display: block;
+  border: 2px solid var(--border);
+}
+
+.controls {
+  padding: 10px;
+  background-color: var(--bg2);
+  margin: 10px auto;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.controls button {
+  padding: 5px;
+  background-color: var(--bg3);
+  color: var(--text);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.controls button:hover {
+  background-color: var(--bg);
+  transform: scale(1.03);
+}
+
+.controls select {
+  padding: 5px;
+  background-color: var(--bg3);
+  color: var(--text);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.controls select:hover {
+  background-color: var(--bg);
+}
+
+.maze {
+  background-color: var(--bg2);
+  width: fit-content;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.info {
+  display: flex;
+  width: 500px;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+
+.info p {
+  padding: 10px;
+  background-color: var(--bg2);
+  border-radius: 10px;
+}
