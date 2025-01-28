@@ -7,8 +7,8 @@ const movesDisplay = document.getElementById('moves');
 const playerImg = new Image();
 const goalImg = new Image();
 
-playerImg.src = 'among-us.webp';
-goalImg.src = 'amongus.webp';
+playerImg.src = 'player.webp';
+goalImg.src = 'goal.webp';
 
 let cols, rows;
 let cellSize;
