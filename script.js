@@ -58,6 +58,9 @@ function drawLine(x1, y1, x2, y2) {
 function setupMaze() {
   const difficulty = difficultySelector.value;
   switch (difficulty) {
+    case 'mini':
+      cols = rows = 6;
+      break;
     case 'easy':
       cols = rows = 10;
       break;
